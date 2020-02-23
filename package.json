@@ -9,8 +9,9 @@
     "url": "https://beeno-tung.surge.sh"
   },
   "license": "BSD-2-Clause",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "bin": {
+    "penguin-calculator": "dist/cli.js"
+  },
   "scripts": {
     "prestart": "test -f dist/cli.js || npm run build",
     "start": "node dist/cli.js",

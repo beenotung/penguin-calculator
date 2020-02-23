@@ -1,7 +1,7 @@
+#!/usr/bin/env node
 import { getRL, createRL } from '@beenotung/tslib/io';
 import { catchMain } from '@beenotung/tslib/node';
 import { format_time_duration } from '@beenotung/tslib/format';
-
 
 let rl = createRL({ input: process.stdin, output: process.stdout });
 let question = (query: string) => new Promise<string>(resolve => rl.question(query, resolve));
